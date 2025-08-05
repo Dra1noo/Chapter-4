@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demar Payne - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Yo, I’m Demar. I build stuff for the web, keep it looking smooth, and add new tricks as I learn them. Always improving.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="html">HTML/CSS</button>
+            <button data-filter="js">JavaScript</button>
+            <button data-filter="react">React</button>
+            <button data-filter="node">Node.js</button>
+        </div>
+
+        <div class="project-list">
+            <div class="project-card" data-category="html">
+                <img src="project1.jpg" loading="lazy" alt="HTML Project">
+                <p>Landing Page</p>
+            </div>
+            <div class="project-card" data-category="js">
+                <img src="project2.jpg" loading="lazy" alt="JavaScript Game">
+                <p>Interactive Game</p>
+            </div>
+            <div class="project-card" data-category="react">
+                <img src="project3.jpg" loading="lazy" alt="React App">
+                <p>React Web App</p>
+            </div>
+            <div class="project-card" data-category="node">
+                <img src="project4.jpg" loading="lazy" alt="Node Project">
+                <p>Node.js API</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let’s Talk</h2>
+        <p>Got a question? Wanna collab? Drop it here ↓</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send It</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
